@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breezo - Weather Forecast App</title>
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: rgba(255, 255, 255, 0.06);
+      --text: #eaf0ff;
+      --muted: #a9b4cc;
+      --accent: #4da3ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #16243d, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 90px 20px 60px;
+    }
+
+    .app-name {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    .cta {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      background: #2f8df0;
+    }
+
+    /* SCREENSHOTS */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 18px;
+    }
+
+    .shot {
+      background: var(--card);
+      border-radius: 16px;
+      overflow: hidden;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.25s ease;
+    }
+
+    .shot:hover {
+      transform: translateY(-5px);
+    }
+
+    .shot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .placeholder {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="app-name">Breezo</div>
+    <div class="tagline">Beautiful, accurate weather forecasts — instantly.</div>
+    <a class="cta" href="#">Download on App Store</a>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="section">
+    <h2>App Preview</h2>
+
+    <div class="screenshots">
+
+      <!-- Replace src="images/1.png" with your actual files -->
+
+      <div class="shot"><img src="images/Screenshot1.png" alt="Breezo screenshot 1"></div>
+      <div class="shot"><img src="images/Screenshot2.png" alt="Breezo screenshot 2"></div>
+      <div class="shot"><img src="images/Screenshot3.png" alt="Breezo screenshot 3"></div>
+      <div class="shot"><img src="images/Screenshot5.png" alt="Breezo screenshot 5"></div>
+      <div class="shot"><img src="images/Screenshot6.png" alt="Breezo screenshot 6"></div>
+      <div class="shot"><img src="images/Screenshot7.png" alt="Breezo screenshot 7"></div>
+      <div class="shot"><img src="images/Screenshot8.png" alt="Breezo screenshot 8"></div>
+      <div class="shot"><img src="images/Screenshot9.png" alt="Breezo screenshot 9"></div>
+      <div class="shot"><img src="images/Screenshot10.png" alt="Breezo screenshot 10"></div>
+      <div class="shot"><img src="images/Screenshot11.png" alt="Breezo screenshot 11"></div>
+
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="section">
+    <h2>Why Breezo?</h2>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Live Weather</h3>
+        <p>Real-time weather updates based on your location.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Clean UI</h3>
+        <p>A simple, modern interface designed for clarity.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Accurate Forecasts</h3>
+        <p>Powered by reliable weather APIs for precision.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Fast & Lightweight</h3>
+        <p>Optimized for smooth performance on all devices.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Breezo. Built with care for weather lovers.
+  </footer>
+
+</body>
+</html>
